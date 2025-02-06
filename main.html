@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Mời Valentine - Câu Hỏi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec;
+            color: #880e4f;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 40px;
+            color: #d500f9;
+        }
+        .heart {
+            color: #d500f9;
+            font-size: 50px;
+        }
+        .message {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .cta {
+            background-color: #d81b60;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            margin-top: 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #c2185b;
+        }
+
+        .question {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #d500f9;
+        }
+
+        .answer-buttons {
+            margin-top: 20px;
+        }
+
+        .answer-buttons button {
+            padding: 15px 25px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .yes-button {
+            background-color: #81c784;
+        }
+
+        .no-button {
+            background-color: #e57373;
+            position: absolute;
+        }
+
+        /* Chỉ cần chú ý cho việc random di chuyển */
+        .no-button:hover {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Thư Mời Valentine 🎉</h1>
+    <div class="heart">❤️</div>
+    <div class="message">
+        <p>Kính gửi Khánh Linh cute! 💌</p>
+        <p>Anh muốn mời em đi chơi Valentine x Anniversary </p>
+        <p>Mong em có thể sắp xếp thời gian để có thể tham gia với anh </p>
+    </div>
+    <a href="lichtrinh.html" class="cta">Ấn vào đây để có thể xem lịch trình chi tiết !!!</a>
+
+    <div class="question">
+        <p>Câu hỏi quan trọng: </p>
+        <p>❤️ "Em có muốn làm Valentine của anh không?" 💖</p>
+    </div>
+    <center>
+
+    <div class="answer-buttons">
+        <button class="yes-button" onclick="window.location.href='camon.html';">Có 💖</button>
+        <button class="no-button" onmouseover="moveButton(event)">Không 😱</button>
+    </div>
+    </center>
+
+    <script>
+        function moveButton(event) {
+            const button = event.target;
+            const x = Math.random() * (window.innerWidth - button.offsetWidth);
+            const y = Math.random() * (window.innerHeight - button.offsetHeight);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
