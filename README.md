@@ -1,4 +1,4 @@
-# 💌 Thư Mời Valentine - Gửi Khánh Linh
+# 💌 Thư Mời Valentine
 
 Chào mừng đến với project website "Thư Mời Valentine"! Đây là một món quà nho nhỏ, đáng yêu được thiết kế riêng để gửi lời mời Valentine và kỷ niệm Anniversary đến **Khánh Linh**.
 
